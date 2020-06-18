@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="no-js">
   <header class="page-header">
     <div class="page-header__wrap">
       <div class="page-header__container">
@@ -17,12 +17,20 @@
         <a class="page-header__logo">
           <img src="img/logo-desktop.svg" alt="Логотип сайта Круизы в Антарктику" width="70" height="38">
         </a>
-        <nav class="page-header__nav nav">
+        <button class="page-header__menu-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="page-header__menu-toggle-bar"></span>
+        </button>
+
+        <nav class="page-header__nav  nav">
+          <button class="nav__close">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
           <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">Преимущества</a>
+            <li class="nav__item ">
+              <a href="#" class="nav__link ">Преимущества</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__item--order">
               <a href="#" class="nav__link">Направления</a>
             </li>
             <li class="nav__item">
@@ -45,6 +53,7 @@
   <main class="main">
 
   </main>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

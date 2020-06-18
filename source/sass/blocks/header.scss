@@ -1,8 +1,3 @@
-// background-image: url(../img/underwater-hotel.jpg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     background-color: #132231;
 .page-header {
   background-color: #13477c;
   background-image: url(../img/first-screen-desktop.jpg);
@@ -18,6 +13,10 @@
   box-sizing: border-box;
   display: flex;
   padding-top: 35px;
+}
+
+.page-header__menu-toggle {
+  display: none;
 }
 
 .page-header__nav {
@@ -79,4 +78,224 @@
   color: $main-color;
   margin: 0;
   padding-left: 95px;
+}
+
+.nav__close {
+  display: none;
+}
+
+
+@media (max-width: 1023px) {
+  .page-header {
+    background-image: url(../img/first-screen-tablet.jpg);
+  }
+
+  .page-header__container {
+    max-width: 768px;
+    padding: 0 45px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 30px;
+  }
+
+  .page-header__nav {
+    padding-top: 0;
+  }
+
+  .page-header__logo img {
+    display: block;
+    width: 38px;
+    height: auto;
+  }
+
+  .nav__link {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 26px;
+  }
+
+  .nav__item {
+    margin: 0;
+    line-height: 17px;
+  }
+
+  .screen__wrap {
+    max-width: 768px;
+    padding: 0 45px;
+    padding-top: 217px;
+    padding-bottom: 276px;
+  }
+
+  .screen__header {
+    font-size: 50px;
+    line-height: 61px;
+    padding-left: 0;
+  }
+
+  .screen__text {
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 0;
+  }
+
+  .nav__close {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    background-image: url(../img/first-screen-mobile.jpg);
+  }
+
+  .page-header__container {
+    min-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 19px;
+    justify-content: space-between;
+  }
+
+  .page-header__nav {
+    display: none;
+  }
+
+  .page-header__logo img {
+    width: 42px;
+  }
+
+  // мобильное меню в открытом состоянии -------------------
+  .page-header__nav--opened {
+    // display: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+
+    .nav__list {
+      flex-direction: column;
+      padding-top: 89px;
+
+      ::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/logo-menu.svg");
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 22px;
+        top: 20px;
+        left: 16px;
+      }
+    }
+
+    .nav__item {
+      margin-bottom: 21px;
+    }
+
+    .nav__link {
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 15px;
+      color: #011c40;
+    }
+
+    .nav__item--order {
+      order: -1;
+    }
+
+  }
+
+  .nav__link {
+    font-size: 18px;
+    line-height: 66px;
+    margin-left: 2px;
+  }
+
+  .nav__item--order {
+    order: -1;
+  }
+
+  .page-header__menu-toggle {
+    display: block;
+    // display: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+
+  .page-header__menu-toggle-bar,
+  .page-header__menu-toggle::after,
+  .page-header__menu-toggle::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: $main-color;
+  }
+
+  .nav__close {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    padding-top: 5px;
+    cursor: pointer;
+    background-image: url("../img/close.png");
+  }
+
+  // .page-header__menu-toggle--active {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 60px;
+  //   border: none;
+
+  //   background-color: transparent;
+  //   padding: 0;
+  //   padding-top: 5px;
+  //   cursor: pointer;
+
+  //   width: 13px;
+  //   height: 13px;
+
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     background-repeat: no-repeat;
+  //     background-image: url("../img/close.png");
+  //     width: 13px;
+  //     height: 13px;
+  //   }
+
+  //   .page-header__menu-toggle-bar,
+  //   .page-header__menu-toggle::after,
+  //   .page-header__menu-toggle::before {
+  //     display: none;
+  //   }
+  // }
+
+
+
+  .screen__header {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .screen__wrap {
+    min-width: 320px;
+    padding: 134px 15px 179px;
+  }
+
+  .screen__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
