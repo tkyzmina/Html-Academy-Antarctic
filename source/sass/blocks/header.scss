@@ -1,6 +1,6 @@
 .page-header {
   background-color: #13477c;
-  background-image: url(../img/first-screen-desktop.jpg);
+  background-image: url("../img/first-screen-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -87,7 +87,7 @@
 
 @media (max-width: 1023px) {
   .page-header {
-    background-image: url(../img/first-screen-tablet.jpg);
+    background-image: url("../img/first-screen-tablet.jpg");
   }
 
   .page-header__container {
@@ -146,7 +146,7 @@
 
 @media (max-width: 767px) {
   .page-header {
-    background-image: url(../img/first-screen-mobile.jpg);
+    background-image: url("../img/first-screen-mobile.jpg");
   }
 
   .page-header__container {
@@ -175,7 +175,7 @@
     top: 0;
     left: 0;
     background-color: #ffffff;
-    height: 100vh;
+    min-height: 300px;
     width: 100vw;
 
     .nav__list {
@@ -196,19 +196,35 @@
 
     .nav__item {
       margin-bottom: 21px;
+
+      :hover {
+        color: $lighter-color;
+      }
     }
 
     .nav__link {
       font-size: 18px;
       line-height: 22px;
       margin-left: 15px;
-      color: #011c40;
+      color: $dark-text;
     }
 
     .nav__item--order {
       order: -1;
     }
 
+    .nav__close {
+      position: absolute;
+      display: block;
+      border: none;
+      background-color: transparent;
+      padding: 13px;
+      cursor: pointer;
+      background-image: url("../img/close.png");
+      background-repeat: no-repeat;
+      top: 25px;
+      right: 0;
+    }
   }
 
   .nav__link {
@@ -223,7 +239,6 @@
 
   .page-header__menu-toggle {
     display: block;
-    // display: none;
     border: none;
     background-color: transparent;
     padding: 0;
@@ -241,48 +256,6 @@
     margin-bottom: 4px;
     background-color: $main-color;
   }
-
-  .nav__close {
-    display: block;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    padding-top: 5px;
-    cursor: pointer;
-    background-image: url("../img/close.png");
-  }
-
-  // .page-header__menu-toggle--active {
-  //   position: absolute;
-  //   top: 0;
-  //   right: 60px;
-  //   border: none;
-
-  //   background-color: transparent;
-  //   padding: 0;
-  //   padding-top: 5px;
-  //   cursor: pointer;
-
-  //   width: 13px;
-  //   height: 13px;
-
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     background-repeat: no-repeat;
-  //     background-image: url("../img/close.png");
-  //     width: 13px;
-  //     height: 13px;
-  //   }
-
-  //   .page-header__menu-toggle-bar,
-  //   .page-header__menu-toggle::after,
-  //   .page-header__menu-toggle::before {
-  //     display: none;
-  //   }
-  // }
-
-
 
   .screen__header {
     font-size: 36px;
