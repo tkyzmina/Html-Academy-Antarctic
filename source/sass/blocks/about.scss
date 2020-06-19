@@ -1,0 +1,112 @@
+.about {
+  padding-top: 120px;
+}
+
+.about__wrap {
+  position: relative;
+  max-width: 1200px;
+  padding: 0 20px;
+  padding-right: 644px;
+  padding-top: 58px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.about__wrap::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/about-desktop.png");
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 301px;
+  top: 0;
+  right: 20px;
+}
+
+.about__header {
+  font-family: "montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: $dark-text;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+}
+
+.about__text {
+  font-family: "montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark-text;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (max-width: 1023px) {
+  .about {
+    padding-top: 91px;
+  }
+
+  .about__header {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about__wrap {
+    max-width: 768px;
+    padding: 0 45px;
+    padding-right: 394px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .about__wrap::after {
+    content: "";
+    background-image: url("../img/about-tablet.png");
+    width: 324px;
+    height: 264px;
+    top: 9px;
+    right: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding-top: 57px;
+  }
+
+  .about__header {
+    font-size: 24px;
+    line-height: 34px;
+    padding-right: 81px;
+  }
+
+  .about__wrap {
+    min-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .about__wrap::after {
+    content: "";
+    background-image: url("../img/about-mobile.png");
+    width: 290px;
+    height: 186px;
+    top: 332px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
