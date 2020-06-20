@@ -1,26 +1,21 @@
 .about {
   padding-top: 120px;
+  margin-bottom: 116px;
 }
 
 .about__wrap {
-  position: relative;
   max-width: 1200px;
   padding: 0 20px;
-  padding-right: 644px;
-  padding-top: 58px;
   margin: 0 auto;
   box-sizing: border-box;
+  display: flex;
 }
 
-.about__wrap::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/about-desktop.png");
-  background-repeat: no-repeat;
-  width: 560px;
-  height: 301px;
-  top: 0;
-  right: 20px;
+.about__description {
+  min-width: 412px;
+  flex: 1;
+  padding-top: 58px;
+  margin-right: 88px;
 }
 
 .about__header {
@@ -46,16 +41,22 @@
   padding: 0;
 }
 
+.about__img {
+  width: 560px;
+}
+
 
 @media (max-width: 1023px) {
   .about {
-    padding-top: 91px;
+    padding-top: 100px;
+    margin-bottom: 33px;
   }
 
   .about__header {
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 16px;
+    max-width: 205px;
   }
 
   .about__text {
@@ -66,24 +67,26 @@
   .about__wrap {
     max-width: 768px;
     padding: 0 45px;
-    padding-right: 394px;
     margin: 0 auto;
     box-sizing: border-box;
   }
 
-  .about__wrap::after {
-    content: "";
-    background-image: url("../img/about-tablet.png");
+  .about__description {
+    min-width: 324px;
+    margin-right: 30px;
+    padding-top: 0;
+    margin-top: -10px;
+  }
+
+  .about__img {
     width: 324px;
-    height: 264px;
-    top: 9px;
-    right: 45px;
   }
 }
 
 @media (max-width: 767px) {
   .about {
     padding-top: 57px;
+    margin-bottom: 60px;
   }
 
   .about__header {
@@ -93,20 +96,28 @@
   }
 
   .about__wrap {
+    flex-direction: column;
     min-width: 320px;
     padding: 0 15px;
     margin: 0 auto;
     box-sizing: border-box;
   }
 
-  .about__wrap::after {
-    content: "";
-    background-image: url("../img/about-mobile.png");
-    width: 290px;
-    height: 186px;
-    top: 332px;
-    left: 0;
-    right: 0;
-    margin: auto;
+  .about__description {
+    min-width: 290px;
+    margin-bottom: 33px;
+    margin-top: 0;
+  }
+
+  .about__img {
+    width: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 321px) {
+  .about__header {
+    max-width: 100%;
   }
 }
