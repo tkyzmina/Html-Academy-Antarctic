@@ -100,19 +100,27 @@
         <ul class="products__list">
           <li class="products__item">
             <div class="products__hover">
-              <h3>Круиз "Астория"</h3>
-              <h4>Маршрут</h4>
-              <p>Аргентина - Фолклендские острова - Антарктида</p>
-              <h4>Порт отправления</h4>
-              <p>Ушуайя</p>
-              <h4>Продолжительность</h4>
-              <p>11 дней</p>
-              <h4>Цена</h4>
-              <p>от 11500 $</p>
+              <div class="products__description">
+                <h3>Круиз "Астория"</h3>
+                <h4>Маршрут</h4>
+                <p>Аргентина - Фолклендские острова - Антарктида</p>
+                <h4>Порт отправления</h4>
+                <p>Ушуайя</p>
+                <h4>Продолжительность</h4>
+                <p>11 дней</p>
+                <h4>Цена</h4>
+                <p>от 11500 $</p>
+              </div>
+
               <a class="products__button" href="#">Забронировать</a>
             </div>
             <div class="products__inner">
-              <img class="products__img" src="img/astoria-desktop.jpg" alt="Изображение Круиз Астория">
+
+              <source srcset="img/astoria-mobile.jpg " media="(max-width: 767px)">
+
+              <source srcset="img/astoria-tablet.jpg" media="(max-width: 1023px)">
+
+              <img class="products__img" src="img/astoria-desktop.jpg" alt="Изображение Круиз Астория" width="260" height="386">
               <h3>Круиз "Астория"</h3>
             </div>
           </li>
@@ -131,6 +139,8 @@
               <a class="products__button" href="#">Забронировать</a>
             </div>
             <div class="products__inner">
+              <source srcset="img/astoria-mobile.jpg " media="(max-width: 767px)">
+              <source srcset="img/astoria-tablet.jpg" media="(max-width: 1023px)">
               <img class="products__img" src="img/olimpia-desktop.jpg" alt="Изображение Круиз Элайн">
               <h3>Круиз “Элайн”</h3>
               <div>

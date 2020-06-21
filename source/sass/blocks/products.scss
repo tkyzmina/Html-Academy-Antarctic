@@ -12,7 +12,6 @@
 .products__list {
   margin: 0;
   padding: 0;
-  padding-left: 15px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -20,15 +19,12 @@
 
 .products__item {
   background-color: #011c40;
-  width: 260px;
-  height: 386px;
+  width: calc(100% / 4 - 30px);
+  // height: 386px;
   box-sizing: border-box;
-  margin-right: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
   margin-bottom: 30px;
-
-  &:nth-of-type(4n) {
-    margin-right: 0;
-  }
 
   &:hover {
     box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
@@ -44,9 +40,10 @@
 }
 
 .products__hover {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
-  width: 260px;
+  width: 100%;
   height: 386px;
   padding: 35px 25px;
   padding-top: 29px;
@@ -55,6 +52,7 @@
 }
 
 .products__img {
+  // position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -129,9 +127,8 @@
 }
 
 .products__button {
-  position: absolute;
   display: block;
-  width: 210px;
+  width: 100%;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -144,6 +141,79 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: auto;
-  bottom: 35px;
-  left: 25px;
+  align-self: flex-end;
+}
+
+
+@media (max-width: 1023px) {
+  .products {
+    padding-top: 90px;
+  }
+
+  .products__wrap {
+    max-width: 768px;
+    padding: 0 45px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .products__item {
+    width: calc(100% / 2 - 30px);
+  }
+
+  .products__hover {
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .products__img {
+    height: 386px;
+  }
+
+  .products__header {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 50px;
+  }
+
+  .products__inner h3 {
+    bottom: 14px;
+    left: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .products {
+    padding-top: 57px;
+  }
+
+  .products__header {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .products__wrap {
+    min-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .products__item {
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .products__hover {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .products__inner h3 {
+    bottom: 5px;
+    left: 26px;
+  }
 }
