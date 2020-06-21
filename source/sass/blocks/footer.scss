@@ -57,6 +57,7 @@
 
 .footer__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__item {
@@ -72,4 +73,55 @@
 
 .socials__link:hover .social__icon {
   fill: $darker-color;
+}
+
+@media (max-width: 1023px) {
+  .footer__wrap {
+    min-width: 768px;
+    padding: 0 45px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .footer__nav {
+    padding-top: 0;
+  }
+
+  .footer__socials {
+    min-width: 87px;
+  }
+
+  .footer__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer__logo {
+    margin-right: 24px;
+  }
+
+  .footer__logo img {
+    display: block;
+    width: 38px;
+    height: auto;
+  }
+
+  .footer__item {
+    margin-right: 25px;
+  }
+
+  .social__icon--fb {
+    width: 9px;
+    height: 16px;
+  }
+
+  .social__icon--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social__icon--twitter {
+    width: 16px;
+    height: 13px;
+  }
 }
