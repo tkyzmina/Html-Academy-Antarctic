@@ -30,6 +30,10 @@
     box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   }
 
+  &:focus {
+    box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  }
+
   &:hover .products__popup {
     display: block;
   }
@@ -37,6 +41,14 @@
   &:hover .products__inner {
     display: none;
   }
+
+  // &:focus .products__popup {
+  //   display: block;
+  // }
+
+  // &:focus .products__inner {
+  //   display: none;
+  // }
 }
 
 .products__popup {
@@ -79,6 +91,7 @@
 
 .products__inner {
   position: relative;
+  height: 386px;
 }
 
 .products__inner h3 {

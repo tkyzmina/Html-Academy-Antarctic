@@ -70,8 +70,12 @@
   fill: $main-color;
 }
 
-.socials__link:hover .social__icon {
-  fill: $darker-color;
+.socials__link {
+  cursor: pointer;
+
+  &:hover .socials__icon {
+    fill: $darker-color;
+  }
 }
 
 @media (max-width: 1023px) {
