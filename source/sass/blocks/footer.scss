@@ -1,15 +1,15 @@
 .footer {
-  background-color: $dark-text;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: $dark-text;
 }
 
 .footer__wrap {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
-  box-sizing: border-box;
   display: flex;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer__nav {
@@ -18,9 +18,9 @@
 }
 
 .footer__socials {
-  align-self: center;
   display: flex;
   justify-content: space-between;
+  align-self: center;
   min-width: 117px;
 }
 
@@ -29,9 +29,9 @@
 }
 
 .socials__list {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .footer__list,
@@ -42,11 +42,11 @@
 }
 
 .footer__link {
-  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
   color: $main-color;
   text-decoration: none;
 
@@ -66,8 +66,7 @@
   margin-right: 35px;
 }
 
-
-.social__icon {
+.socials__icon {
   fill: $main-color;
 }
 
@@ -77,10 +76,10 @@
 
 @media (max-width: 1023px) {
   .footer__wrap {
-    min-width: 768px;
-    padding: 0 45px;
-    margin: 0 auto;
     box-sizing: border-box;
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0 45px;
   }
 
   .footer__nav {
@@ -110,17 +109,17 @@
     margin-right: 25px;
   }
 
-  .social__icon--fb {
+  .socials__icon--fb {
     width: 9px;
     height: 16px;
   }
 
-  .social__icon--instagram {
+  .socials__icon--instagram {
     width: 16px;
     height: 16px;
   }
 
-  .social__icon--twitter {
+  .socials__icon--twitter {
     width: 16px;
     height: 13px;
   }
@@ -133,11 +132,11 @@
   }
 
   .footer__wrap {
-    min-width: 320px;
-    padding: 0 15px;
-    margin: 0 auto;
     box-sizing: border-box;
     flex-direction: column;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 
   .footer__nav {
