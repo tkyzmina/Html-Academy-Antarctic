@@ -953,7 +953,8 @@ img {
   text-align: center; }
 
 .products__inner {
-  position: relative; }
+  position: relative;
+  height: 386px; }
 
 .products__inner h3 {
   position: absolute;
