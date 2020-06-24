@@ -55,6 +55,7 @@
   .about__header {
     max-width: 205px;
     margin-bottom: 16px;
+    padding-right: 100px;
     font-size: 26px;
     line-height: 36px;
   }
@@ -66,7 +67,7 @@
 
   .about__wrap {
     box-sizing: border-box;
-    max-width: 768px;
+    min-width: 768px;
     margin: 0 auto;
     padding: 0 45px;
   }
@@ -110,10 +111,11 @@
   }
 
   .about__img {
-    width: auto;
-    box-sizing: border-box;
-    margin: 0 auto;
+    width: 100%;
+      margin: 0 auto;
   }
+  .about__img img{
+    width: 100%;}
 }
 
 @media (min-width: 321px) {

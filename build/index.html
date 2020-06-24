@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="no-js">
+<body>
   <div class="footer-down">
-    <header class="page-header">
+    <header class="page-header page-header--no-js ">
       <div class="page-header__wrap">
         <div class="page-header__container">
           <a class="page-header__logo">
@@ -25,23 +25,22 @@
             <span class="visually-hidden">Открыть меню</span>
             <span class="page-header__menu-toggle-bar"></span>
           </button>
-
-          <nav class="page-header__nav  nav">
+          <nav class="page-header__nav  nav page-header__nav--opened">
             <button class="nav__close" type="button">
               <span class="visually-hidden">Закрыть меню</span>
             </button>
             <ul class="nav__list">
               <li class="nav__item ">
-                <a href="#" class="nav__link ">Преимущества</a>
+                <a href="#advantages" class="nav__link ">Преимущества</a>
               </li>
               <li class="nav__item nav__item--order">
                 <a href="#" class="nav__link">Направления</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">Ближайшие круизы</a>
+                <a href="#products" class="nav__link">Ближайшие круизы</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">Контакты</a>
+                <a href="#contacts" class="nav__link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -49,7 +48,7 @@
       </div>
       <div class="page-header__screen screen">
         <div class="screen__wrap">
-          <h1 class="screen__header">Круизы в Антарктику </h1>
+          <h1 class="screen__header"><span>Круизы</span> в Антарктику</h1>
           <p class="screen__text">Волшебный мир айсбергов и пингвинов</p>
         </div>
       </div>
@@ -84,7 +83,7 @@
 
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="advantages__wpar">
           <h2 class="advantages__header">Преимущества</h2>
           <ul class="advantages__list">
@@ -106,7 +105,7 @@
           </ul>
         </div>
       </section>
-      <section class="products">
+      <section class="products" id="products">
         <h2 class="products__header">Ближайшие круизы</h2>
         <div class="products__wrap">
           <ul class="products__list">
@@ -403,6 +402,7 @@
           </ul>
         </div>
       </section>
+
       <section class="booking">
         <h2 class="visually-hidden">Форма раннего бронирования</h2>
         <div class="booking__wrap">
@@ -440,13 +440,12 @@
           </form>
         </div>
       </section>
-      <section class="contacts">
+
+      <section class="contacts" id="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrap">
           <div class="contacts__map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A56c1b74b29d11e1854378a54f1cfb6be3b7b7808e6632cd67778d07079ee1f50&amp;source=constructor" frameborder="0"></iframe>
-            <!-- width="560" height="306" -->
-            <!-- style="display: block; width: 100%; height: 100%;" -->
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A56c1b74b29d11e1854378a54f1cfb6be3b7b7808e6632cd67778d07079ee1f50&amp;source=constructor"></iframe>
           </div>
           <div class="contacts__info">
             <h3 class="contacts__invite">У вас ещё остались вопросы или сомнения?
@@ -458,25 +457,26 @@
       </section>
     </main>
   </div>
+
   <footer class="footer">
     <div class="footer__wrap">
       <a class="footer__logo">
-        <img src="img/logo-desktop.svg" alt="Логотип компании Круизу в Антарктику" width="70" height="38">
+        <img src="img/logo-desktop.svg" alt="Логотип компании Круизы в Антарктику" width="70" height="38">
       </a>
       <nav class="footer__nav">
         <h3 class="visually-hidden">Меню навигации</h3>
         <ul class="footer__list">
           <li class="footer__item">
-            <a href="#" class="footer__link">Преимущества</a>
+            <a href="#advantages" class="footer__link">Преимущества</a>
           </li>
           <li class="footer__item">
             <a href="#" class="footer__link">Направления</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Ближайшие круизы</a>
+            <a href="#products" class="footer__link">Ближайшие круизы</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Контакты</a>
+            <a href="#contacts" class="footer__link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -484,23 +484,14 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a href="https://www.facebook.com" class="socials__link socials__link--fb" aria-label="ссылка на Facebook">
-              <!-- <svg class="socials__icon socials__icon--fb" width="11" height="20">
-                <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
-              </svg> -->
             </a>
           </li>
           <li class="socials__item">
             <a href="https://www.instagram.com" class="socials__link socials__link--instagram" aria-label="ссылка на  Instagram">
-              <!-- <svg class="socials__icon socials__icon--instagram" width="20" height="20">
-                <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
-              </svg> -->
             </a>
           </li>
           <li class="socials__item">
             <a href="https://www.twitter.com" class="socials__link socials__link--twitter" aria-label="ссылка на  Twitter">
-              <!-- <svg class="socials__icon socials__icon--twitter" width="20" height="16">
-                <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
-              </svg> -->
             </a>
           </li>
         </ul>

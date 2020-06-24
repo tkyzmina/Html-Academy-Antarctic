@@ -341,7 +341,8 @@ body {
 iframe {
   display: block;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  border: none; }
 
 img {
   display: block;
@@ -562,6 +563,10 @@ input[type="checkbox"].visually-hidden {
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
               order: -1; }
+    .page-header__nav--opened .page-header--no-js .nav__close {
+      display: none; }
+    .page-header__nav--opened .page-header--no-js .page-header__menu-toggle {
+      display: none; }
     .page-header__nav--opened .nav__close {
       position: absolute;
       top: 25px;
@@ -573,6 +578,10 @@ input[type="checkbox"].visually-hidden {
       background-repeat: no-repeat;
       border: none;
       cursor: pointer; }
+  .page-header--no-js .nav__close {
+    display: none; }
+  .page-header--no-js {
+    margin-top: 200px; }
   .nav__link {
     font-size: 18px;
     line-height: 66px;
@@ -588,6 +597,8 @@ input[type="checkbox"].visually-hidden {
     background-color: transparent;
     border: none;
     cursor: pointer; }
+  .page-header--no-js .page-header__menu-toggle {
+    display: none; }
   .page-header__menu-toggle-bar,
   .page-header__menu-toggle::after,
   .page-header__menu-toggle::before {
@@ -600,6 +611,8 @@ input[type="checkbox"].visually-hidden {
   .screen__header {
     font-size: 36px;
     line-height: 45px; }
+  .screen__header span {
+    display: block; }
   .screen__wrap {
     min-width: 320px;
     padding: 134px 15px 179px; }
@@ -661,6 +674,7 @@ input[type="checkbox"].visually-hidden {
   .about__header {
     max-width: 205px;
     margin-bottom: 16px;
+    padding-right: 100px;
     font-size: 26px;
     line-height: 36px; }
   .about__text {
@@ -669,7 +683,7 @@ input[type="checkbox"].visually-hidden {
   .about__wrap {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    max-width: 768px;
+    min-width: 768px;
     margin: 0 auto;
     padding: 0 45px; }
   .about__description {
@@ -703,10 +717,10 @@ input[type="checkbox"].visually-hidden {
     margin-bottom: 33px;
     margin-top: 0; }
   .about__img {
-    width: auto;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: 0 auto; } }
+    width: 100%;
+    margin: 0 auto; }
+  .about__img img {
+    width: 100%; } }
 
 @media (min-width: 321px) {
   .about__header {
