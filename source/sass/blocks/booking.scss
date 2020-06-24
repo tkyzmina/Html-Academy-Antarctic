@@ -117,7 +117,7 @@
   }
 }
 
-.form__item input:checked+.form__checkbox::before {
+.form__item input:checked + .form__checkbox::before {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center center;

@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*! svg4everybody v2.1.9 | github.com/jonathantneal/svg4everybody */
 
 function embed(parent, svg, target, use) {

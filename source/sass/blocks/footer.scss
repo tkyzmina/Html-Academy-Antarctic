@@ -17,20 +17,17 @@
   flex-grow: 1;
 }
 
-.footer__socials {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  min-width: 117px;
-}
-
 .footer__logo {
   margin-right: 39px;
 }
 
+.footer__socials {
+  min-width: 117px;
+  padding-top: 10px;
+}
+
 .socials__list {
   display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 
@@ -66,20 +63,46 @@
   margin-right: 35px;
 }
 
-.socials__icon {
-  fill: $main-color;
-}
-
 .socials__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
   cursor: pointer;
 
-  &:hover .socials__icon {
-    fill: $darker-color;
+  &:hover {
+    opacity: 0.8;
   }
 }
 
+.socials__item {
+  margin-right: 29px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link--fb {
+  background-image: url("../img/icon-facebook.svg");
+}
+
+.socials__link--instagram {
+  background-image: url("../img/icon-instagram.svg");
+}
+
+.socials__link--twitter {
+  background-image: url("../img/icon-twitter.svg");
+}
+
 @media (max-width: 1023px) {
+  .footer {
+    padding-top: 40px;
+  }
+
   .footer__wrap {
+    align-items: center;
     box-sizing: border-box;
     min-width: 768px;
     margin: 0 auto;
@@ -87,11 +110,12 @@
   }
 
   .footer__nav {
-    padding-top: 0;
+    padding-top: 5px;
   }
 
   .footer__socials {
     min-width: 87px;
+    padding-top: 10px;
   }
 
   .footer__link {
@@ -101,6 +125,7 @@
 
   .footer__logo {
     margin-right: 24px;
+    padding-top: 10px;
   }
 
   .footer__logo img {
@@ -113,38 +138,34 @@
     margin-right: 25px;
   }
 
-  .socials__icon--fb {
-    width: 9px;
-    height: 16px;
+  .socials__item {
+    margin-right: 17px;
   }
 
-  .socials__icon--instagram {
+  .socials__link {
     width: 16px;
     height: 16px;
-  }
-
-  .socials__icon--twitter {
-    width: 16px;
-    height: 13px;
   }
 }
 
 @media (max-width: 767px) {
   .footer {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 35px;
   }
 
   .footer__wrap {
     box-sizing: border-box;
     flex-direction: column;
+    align-items: flex-start;
     min-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
   }
 
   .footer__nav {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
+    padding-top: 0;
   }
 
   .footer__list {
@@ -153,6 +174,7 @@
 
   .footer__socials {
     align-self: flex-start;
+    padding-top: 0;
   }
 
   .socials__list {
