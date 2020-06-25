@@ -1207,6 +1207,11 @@ input[type="checkbox"].visually-hidden {
     background-color: #adc8e4;
     border: none; }
 
+.booking__form input[type="text"],
+.booking__form input[type="tel"],
+.booking__form input[type="email"] {
+  border-radius: 0; }
+
 .form__checkbox {
   position: relative;
   display: block;
@@ -1253,6 +1258,7 @@ input[type="checkbox"].visually-hidden {
   color: #011c40;
   background-color: #f9fbfd;
   border: none;
+  border-radius: 0;
   cursor: pointer; }
   .booking__button:hover {
     background-color: #adc8e4; }

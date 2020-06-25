@@ -89,6 +89,12 @@
   }
 }
 
+.booking__form input[type="text"],
+.booking__form input[type="tel"],
+.booking__form input[type="email"] {
+  border-radius: 0;
+}
+
 .form__checkbox {
   position: relative;
   display: block;
@@ -141,6 +147,7 @@
   color: $dark-text;
   background-color: $main-color;
   border: none;
+  border-radius: 0;
   cursor: pointer;
 
   &:hover {
