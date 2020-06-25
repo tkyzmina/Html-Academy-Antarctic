@@ -57,8 +57,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 197px;
-  padding-bottom: 278px;
+  padding-top: 192px;
+  padding-bottom: 279px;
 }
 
 .screen__header {
@@ -107,10 +107,10 @@
     padding-top: 0;
   }
 
-  .page-header__logo img {
+  .page-header__logo svg {
     display: block;
     width: 38px;
-    height: auto;
+    height: 20px;
   }
 
   .nav__link {
@@ -167,8 +167,9 @@
     display: none;
   }
 
-  .page-header__logo img {
+  .page-header__logo svg {
     width: 42px;
+    height: 22px;
   }
 
   // мобильное меню в открытом состоянии -------------------

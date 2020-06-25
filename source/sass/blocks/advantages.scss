@@ -117,12 +117,12 @@
 
 @media (max-width: 1023px) {
   .advantages {
-    padding-top: 90px;
-    padding-bottom: 59px;
+    padding-top: 89px;
+    padding-bottom: 60px;
     background-image: url("../img/advantages-tablet.png");
   }
 
-  .advantages__wpar {
+  .advantages__wrapper {
     box-sizing: border-box;
     max-width: 768px;
     margin: 0 auto;
@@ -185,7 +185,7 @@
     background-image: url("../img/advantages-mobile.png");
   }
 
-  .advantages__wpar {
+  .advantages__wrapper {
     box-sizing: border-box;
     min-width: 320px;
     margin: 0 auto;
@@ -204,6 +204,7 @@
 
   .advantages__item {
     width: 100%;
+    margin-right: 0;
     margin-bottom: 30px;
   }
 
