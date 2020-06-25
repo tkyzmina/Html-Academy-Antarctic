@@ -292,28 +292,28 @@ template {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-regular.woff2") format("woff2"), url("../fonts/Montserrat-regular.woff") format("woff");
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-medium.woff2") format("woff2"), url("../fonts/Montserrat-medium.woff") format("woff");
+  src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-semibold.woff2") format("woff2"), url("../fonts/Montserrat-semibold.woff") format("woff");
+  src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-bold.woff2") format("woff2"), url("../fonts/Montserrat-bold.woff") format("woff");
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap; }
@@ -337,12 +337,6 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #ffffff; }
-
-iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: none; }
 
 img {
   display: block;
@@ -432,7 +426,7 @@ input[type="checkbox"].visually-hidden {
   .nav__link:hover {
     color: #adc8e4; }
 
-.screen__wrap {
+.screen__wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 1200px;
@@ -491,7 +485,7 @@ input[type="checkbox"].visually-hidden {
   .nav__item {
     margin: 0;
     line-height: 17px; }
-  .screen__wrap {
+  .screen__wrapper {
     max-width: 768px;
     padding: 0 45px;
     padding-top: 217px;
@@ -550,6 +544,8 @@ input[type="checkbox"].visually-hidden {
         height: 22px;
         background-image: url("../img/logo-menu.svg");
         background-repeat: no-repeat; }
+      .page-header__nav--opened .nav__list:hover::before {
+        opacity: 0.8; }
     .page-header__nav--opened .nav__item {
       margin-bottom: 21px; }
       .page-header__nav--opened .nav__item:hover {
@@ -559,25 +555,27 @@ input[type="checkbox"].visually-hidden {
       font-size: 18px;
       line-height: 22px;
       color: #011c40; }
+      .page-header__nav--opened .nav__link:hover {
+        color: #0348a4; }
     .page-header__nav--opened .nav__item--order {
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
               order: -1; }
-    .page-header__nav--opened .page-header--no-js .nav__close {
-      display: none; }
     .page-header__nav--opened .page-header--no-js .page-header__menu-toggle {
       display: none; }
     .page-header__nav--opened .nav__close {
       position: absolute;
       top: 25px;
-      right: 0;
+      right: 14px;
       display: block;
-      padding: 13px;
+      padding: 8px;
       background-color: transparent;
       background-image: url("../img/close.png");
       background-repeat: no-repeat;
       border: none;
       cursor: pointer; }
+      .page-header__nav--opened .nav__close:hover {
+        opacity: 0.8; }
   .page-header--no-js .nav__close {
     display: none; }
   .page-header--no-js {
@@ -613,7 +611,7 @@ input[type="checkbox"].visually-hidden {
     line-height: 45px; }
   .screen__header span {
     display: block; }
-  .screen__wrap {
+  .screen__wrapper {
     min-width: 320px;
     padding: 134px 15px 179px; }
   .screen__text {
@@ -625,7 +623,7 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: 120px;
   padding-top: 120px; }
 
-.about__wrap {
+.about__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,7 +678,7 @@ input[type="checkbox"].visually-hidden {
   .about__text {
     font-size: 16px;
     line-height: 24px; }
-  .about__wrap {
+  .about__wrapper {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     min-width: 768px;
@@ -702,7 +700,7 @@ input[type="checkbox"].visually-hidden {
     padding-right: 81px;
     font-size: 24px;
     line-height: 34px; }
-  .about__wrap {
+  .about__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -735,7 +733,7 @@ input[type="checkbox"].visually-hidden {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.advantages__wpar {
+.advantages__wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 1200px;
@@ -908,7 +906,7 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: 90px;
   padding-top: 110px; }
 
-.products__wrap {
+.products__wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 1200px;
@@ -1059,7 +1057,7 @@ input[type="checkbox"].visually-hidden {
   .products {
     padding-top: 90px;
     margin-bottom: 70px; }
-  .products__wrap {
+  .products__wrapper {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     max-width: 768px;
@@ -1089,7 +1087,7 @@ input[type="checkbox"].visually-hidden {
     margin-bottom: 30px;
     font-size: 24px;
     line-height: 36px; }
-  .products__wrap {
+  .products__wrapper {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     min-width: 320px;
@@ -1118,7 +1116,7 @@ input[type="checkbox"].visually-hidden {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.booking__wrap {
+.booking__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1248,7 +1246,7 @@ input[type="checkbox"].visually-hidden {
 @media (max-width: 1023px) {
   .booking {
     padding-bottom: 100px; }
-  .booking__wrap {
+  .booking__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1279,7 +1277,7 @@ input[type="checkbox"].visually-hidden {
 @media (max-width: 767px) {
   .booking {
     padding-bottom: 65px; }
-  .booking__wrap {
+  .booking__wrapper {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     min-width: 320px;
@@ -1331,7 +1329,7 @@ input[type="checkbox"].visually-hidden {
   padding-top: 120px;
   padding-bottom: 120px; }
 
-.contacts__wrap {
+.contacts__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1343,6 +1341,12 @@ input[type="checkbox"].visually-hidden {
   width: 560px;
   height: 306px;
   margin-right: 100px; }
+
+.contacts__map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none; }
 
 .contacts__info {
   width: calc(100% / 2 - 80px);
@@ -1425,7 +1429,7 @@ input[type="checkbox"].visually-hidden {
     padding: 0 15px;
     padding-top: 58px;
     padding-bottom: 65px; }
-  .contacts__wrap {
+  .contacts__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1451,7 +1455,7 @@ input[type="checkbox"].visually-hidden {
   padding-bottom: 50px;
   background-color: #011c40; }
 
-.footer__wrap {
+.footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1536,7 +1540,7 @@ input[type="checkbox"].visually-hidden {
 @media (max-width: 1023px) {
   .footer {
     padding-top: 40px; }
-  .footer__wrap {
+  .footer__wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1572,7 +1576,7 @@ input[type="checkbox"].visually-hidden {
   .footer {
     padding-top: 30px;
     padding-bottom: 35px; }
-  .footer__wrap {
+  .footer__wrapper {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-box-orient: vertical;
